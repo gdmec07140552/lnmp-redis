@@ -1,0 +1,11 @@
+[Unit]
+Description=php-fpm service
+After=network.target
+   
+[Service]
+Type=forking
+ExecStart=/usr/local/php7.3/sbin/php-fpm
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
