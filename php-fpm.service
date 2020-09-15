@@ -5,6 +5,7 @@ After=network.target
 [Service]
 Type=forking
 ExecStart=/usr/local/php7.3/sbin/php-fpm
+ExecReload=/usr/local/php7.3/sbin/php-fpm restart
 PrivateTmp=true
 
 [Install]
